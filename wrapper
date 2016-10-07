@@ -1,0 +1,13 @@
+#!/bin/sh
+
+set -e
+
+CONFIG="$SNAP_COMMON/dnsmasq.conf"
+
+while :; do
+    if [ -e "$CONFIG" ]; then
+        $SNAP/bin/dnsmasq -C "$CONFIG"
+        sleep 5
+    fi
+done
+
