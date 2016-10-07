@@ -1,5 +1,5 @@
-name: dnsmasq
-version: 2.76-29-g7ac9ae1
+name: dnsmasqd
+version: 2.76
 summary: Network infrastructure swiss-army knife
 description: |
   Dnsmasq provides network infrastructure for small networks: DNS, DHCP, router
