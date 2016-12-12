@@ -5,8 +5,8 @@ description: |
   Dnsmasq provides network infrastructure for small networks: DNS, DHCP, router
   advertisement and network boot. It is designed to be lightweight and have a
   small footprint, suitable for resource constrained routers and firewalls. 
-grade: devel
-confinement: devmode
+grade: stable
+confinement: strict
 
 apps:
   dnsmasq:
@@ -14,12 +14,14 @@ apps:
     plugs:
       - network
       - network-bind
+      - network-control
   dnsmasqd:
     daemon: simple
     command: bin/wrapper
     plugs:
       - network
       - network-bind
+      - network-control
 
 parts:
   dnsmasq:
