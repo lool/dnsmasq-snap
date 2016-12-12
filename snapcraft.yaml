@@ -26,7 +26,7 @@ apps:
 parts:
   dnsmasq:
     plugin: make
-    source: https://github.com/lool/dnsmasq
+    source: https://github.com/lool/dnsmasq.git
     source-tag: v2.76
     organize:
       usr/local/sbin/dnsmasq: bin/dnsmasq
