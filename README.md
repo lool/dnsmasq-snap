@@ -14,7 +14,7 @@ To test the binary, run it in the foreground as a DNS proxy on port 8053:
 Query it with dig:
 `dig -p 8053 snapcraft.io @127.0.0.1`
 
-To use the daemon, just but a dnsmasq.conf in `/var/snap/dnsmasq/common/`; it
+To use the daemon, just put a dnsmasq.conf in `/var/snap/dnsmasq/common/`; it
 should start automatically after some seconds.
 
 If you need privileged operations such as to answer BOOTP/DHCP requests, make
